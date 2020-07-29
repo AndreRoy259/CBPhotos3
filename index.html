@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ClaudiaB Photos</title>
+  </head>
+  <body>
+    <section>
+      <img src="./img/full/img1_large.jpeg" id="slider" />
+      <ul class="navigation">
+        <li onclick="imgSlider('./img/full/img1_large.jpeg')">
+          <img src="./img/preview/img1_thumb.jpeg" />
+        </li>
+        <li onclick="imgSlider('./img/full/img2_large.jpg')">
+          <img src="./img/preview/img2_thumb.jpg" />
+        </li>
+        <li onclick="imgSlider('./img/full/img3_large.jpg')">
+          <img src="./img/preview/img3_thumb.jpg" />
+        </li>
+        <li onclick="imgSlider('./img/full/img4_large.jpg')">
+          <img src="./img/preview/img4_thumb.jpg" />
+        </li>
+      </ul>
+      <h2>Claudia Barbara Photos</h2>
+    </section>
+
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.getElementById("slider").src = anything;
+      }
+    </script>
+  </body>
+</html>
